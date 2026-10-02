@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paid Learning | SkillSwap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo"> Skill<span>Swap</span> </div>
+        <nav class="navigation"> <a href="index.html">Home</a> <a href="explore.html">Explore</a> <a
+                href="offer.html">Offer a Skill</a> <a href="sell.html" class="active">Paid Learning</a> </nav>
+    </header>
+    <main class="paid-learning">
+        <h1>Earn Money by Teaching Skills</h1>
+        <p> Don't have a skill to exchange? Find someone who can teach you and pay them for their time. You can also
+            offer your own skills and set your fee. </p>
+        <h2>I Want to Learn</h2>
+        <p> Find a student who can teach you the skill you want to learn. </p>
+        <form action="#" method="post"> <label for="learn-skill"> Skill I Want to Learn </label> <input type="text"
+                id="learn-skill" name="learn-skill" placeholder="e.g. Photoshop, Python, Guitar" required> <label
+                for="budget"> My Budget </label> <select id="budget" name="budget" required>
+                <option value=""> Select your budget </option>
+                <option value="100"> ₹100 / week </option>
+                <option value="200"> ₹200 / week </option>
+                <option value="300"> ₹300 / week </option>
+                <option value="500"> ₹500 / week </option>
+                <option value="any"> Any price </option>
+            </select> <button type="submit"> Find a Teacher </button> </form>
+        <hr>
+        <h2>I Want to Teach</h2>
+        <p> Have a skill you can teach? Add your skill and set your own fee. </p>
+        <form action="#" method="post"> <label for="teacher-name"> Your Name </label> <input type="text"
+                id="teacher-name" name="teacher-name" placeholder="Enter your name" required> <label for="teach-skill">
+                Skill You Can Teach </label> <input type="text" id="teach-skill" name="teach-skill"
+                placeholder="e.g. Web Development" required> <label for="fee"> Your Fee </label> <select id="fee"
+                name="fee" required>
+                <option value=""> Select your fee </option>
+                <option value="100"> ₹100 / week </option>
+                <option value="200"> ₹200 / week </option>
+                <option value="300"> ₹300 / week </option>
+                <option value="500"> ₹500 / week </option>
+            </select> <label for="description"> About Your Skill </label> <textarea id="description" name="description"
+                rows="4" placeholder="Describe what you can teach..." required></textarea> <button type="submit">
+                Publish My Skill </button> </form>
+   
+    </main>
+    <footer class="site-footer">
+        <p> © 2026 SkillSwap | Student Skill Exchange </p>
+    </footer>
+</body>
+
+</html>
