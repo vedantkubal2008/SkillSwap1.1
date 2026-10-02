@@ -8,8 +8,9 @@ body {
 
 marquee {
   font-size: 40px;
-  border: 3px ridge #747272;
+  border: 3px solid #747272;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background:#e4dada;
 }
 
 .site-header {
@@ -200,7 +201,7 @@ footer .logo span {
   color: #e60000;
 }
 
-/* ---------------- Offer Page Styles ---------------- */
+/*  Offer*/
 
 .page-heading {
   text-align: center;
@@ -320,7 +321,7 @@ input:focus, select:focus, textarea:focus {
   background: #990000;
 }
 
-/* ---------------- Explore Page Styles ---------------- */
+/* explore */
 
 .category-list {
   display: flex;
@@ -432,10 +433,9 @@ th, td {
   text-align: center;
 }
 @media (max-width: 850px) {
-
-    .hero-content,
-    .rules-layout,
-    .form-layout {
+  .hero-content,
+  .rules-layout,
+      .form-layout {
         grid-template-columns: 1fr;
     }
 
@@ -459,7 +459,7 @@ th, td {
 
 @media (max-width: 600px) {
 
-    .navigation {
+  .navigation {
         flex-direction: column;
         padding: 18px 0;
     }
@@ -481,22 +481,113 @@ th, td {
     }
 
     .idea-card {
-        box-shadow: 6px 6px 0 #2563eb;
+        box-shadow: 6px 6px 0 #aeb2ba;
     }
-
-    .section-heading h2,
-    .rules h2,
-    .cta h2,
-    .form-intro h2 {
+.section-heading h2,
+.rules h2,
+.cta h2,
+.form-intro h2 {
         font-size: 2rem;
     }
-
-    .skill-form {
+.skill-form {
         padding: 22px;
     }
-
-    .footer-content {
+.footer-content {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+.paid-learning {
+  padding: 40px 20px;
+}
+
+.paid-learning > h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.paid-learning > p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+.paid-learning > h2 {
+  color: #000;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.paid-learning > h2 + p {
+  text-align: left;
+  margin: 0 0 20px;
+}
+.paid-learning form {
+  background: #fff;
+  border: 5px inset #0c0c0c;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.paid-learning form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.paid-learning form input,
+.paid-learning form select,
+.paid-learning form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.paid-learning form input:focus,
+.paid-learning form select:focus,
+.paid-learning form textarea:focus {
+  border-color: #e60000;
+  outline: none;
+}
+.paid-learning form button {
+  background: #e60000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.paid-learning  form button:hover {
+  background: #990000;
+}
+@media (max-width: 600px) {
+
+  .paid-learning {
+    padding: 25px 15px;
+  }
+
+  .paid-learning > h1 {
+    font-size: 32px;
+  }
+
+  .paid-learning form {
+    padding: 15px;
+  }
+
+  .paid-learning > article {
+    padding: 15px;
+  }
+
+  .paid-learning > article strong {
+    display: block;
+    margin-bottom: 12px;
+  }
+
 }
